@@ -1,4 +1,4 @@
-#Joomla Installation
+Joomla Installation
 
 Joomla and Mijo extension to enable video sharing functionality for Corpnet users. 
 
