@@ -1,0 +1,64 @@
+fieldset.adminform { border: 1px solid #ccc; margin: 0 10px 10px 10px; }
+
+/** toolbar icons **/
+.icon-48-mijovideos {
+    background-image: url(../images/toolbar2.png);
+    padding-left:260px!important;
+    line-height:50px;
+}
+
+.icon-32-help1  { background-image: url(../images/icon-32-help1.png); }
+
+table.adminlist td.ordering span {
+    background-repeat: no-repeat;
+    height: 13px;
+}
+
+.mijovideos_cpanel, #mijovideos_cpanel { clear:both; margin:-1px 0 8px; padding:8px 0; position:relative; z-index:0; min-height: 95px; }
+.mijovideos_cpanel, #mijovideos_cpanel div.icon-wrapper { float:left; display: block !important; width: auto !important; height :auto!important; line-height:12px !important; background-image: none !important; }
+
+.mijovideos_cpanel div.icon,
+#mijovideos_cpanel div.icon {
+    float: left;
+    margin: 0px 15px 0px 0px;
+    text-align: center;
+}
+
+.mijovideos_cpanel div.icon a,
+#mijovideos_cpanel div.icon a {
+    background-color: #FFFFFF;
+    background-position: -30px center;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    color: #565656;
+    display: block;
+    float: left;
+    height: 97px;
+    text-decoration: none;
+    transition-duration: 0.8s;
+    transition-property: background-position, -moz-border-radius-bottomleft, -moz-box-shadow;
+    vertical-align: middle;
+    width: 108px;
+}
+
+.mijovideos_cpanel div.icon a:hover,
+#mijovideos_cpanel div.icon a:hover,
+.mijovideos_cpanel div.icon a:focus,
+#mijovideos_cpanel div.icon a:focus,
+.mijovideos_cpanel div.icon a:active,
+#mijovideos_cpanel div.icon a:active {
+    border-bottom-left-radius: 50% 20px;
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+.mijovideos_cpanel img,
+#mijovideos_cpanel img {
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.mijovideos_cpanel span,
+#mijovideos_cpanel span {
+    display: block;
+    text-align: center;
+}

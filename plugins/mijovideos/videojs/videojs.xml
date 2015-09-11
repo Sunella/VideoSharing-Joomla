@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="mijovideos" method="upgrade">
+	<name>MijoVideos - VideoJS Player</name>
+    <author>Mijosoft LLC</author>
+    <creationDate>February 2014</creationDate>
+    <authorEmail>info@mijosoft.com</authorEmail>
+    <authorUrl>http://mijosoft.com</authorUrl>
+    <copyright>2009-2014 Mijosoft LLC</copyright>
+    <license>GNU/GPL, http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>1.0.0</version>
+	<description>PLG_MIJOVIDEOS_VIDEOJS_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="videojs">videojs.php</filename>
+		<filename>index.html</filename>
+		<folder>video-js</folder>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_mijovideos_videojs.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_mijovideos_videojs.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="width" type="text" default="1200" label="LABEL_WIDTH" description="DESC_WIDTH" size="3" />
+				<field name="height" type="text" default="677" label="LABEL_HEIGHT" description="DESC_HEIGHT" size="3" />
+				<field name="controls" type="radio" class="btn-group" default="1" label="LABEL_CONTROLS" description="DESC_CONTROLS">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="autoplay" type="list" default="global" label="LABEL_AUTOPLAY" description="DESC_AUTOPLAY">
+					<option value="global">OPTION_GLOBAL</option>
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+				</field>
+				<field name="preload" type="list" default="auto" label="LABEL_PRELOAD" description="DESC_PRELOAD">
+					<option value="auto">auto</option>
+					<option value="metadata">metadata</option>
+					<option value="none">JNO</option>
+				</field>
+				<field name="loop" type="radio" class="btn-group" default="0" label="LABEL_LOOP" description="DESC_LOOP">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="poster_visibility" type="radio" class="btn-group" default="1" label="LABEL_POSTER_VISIBILITY" description="DESC_POSTER_VISIBILITY">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

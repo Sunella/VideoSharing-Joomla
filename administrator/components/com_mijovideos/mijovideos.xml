@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>COM_MIJOVIDEOS</name>
+    <author>Mijosoft LLC</author>
+    <creationDate>February 2014</creationDate>
+    <authorEmail>info@mijosoft.com</authorEmail>
+    <authorUrl>http://mijosoft.com</authorUrl>
+    <copyright>2009-2014 Mijosoft LLC</copyright>
+    <license>GNU/GPL, http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <version>1.0.4</version>
+    <description>MijoVideos allows you to turn your site into a professional looking video-sharing website with features similar to YouTube.</description>
+    
+	<media destination="com_mijovideos" folder="media">
+		<folder>images</folder>	
+		<filename>index.html</filename>	
+	</media>
+	
+	<languages folder="languages/site">
+		<language tag="en-GB">en-GB/en-GB.com_mijovideos.ini</language>
+	</languages>
+	
+	<files folder="site"> 
+		<filename>router.php</filename>
+		<filename>index.html</filename>
+		<filename>mijovideos.php</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	
+	<administration>
+		<menu img="components/com_mijovideos/assets/images/icon-16-mijovideos.png">COM_MIJOVIDEOS</menu>
+		<submenu>
+			<menu link="option=com_mijovideos" img="components/com_mijovideos/assets/images/icon-16-mijovideos.png">COM_MIJOVIDEOS_PANEL</menu>
+			<menu link="option=com_mijovideos&amp;view=fields" img="components/com_mijovideos/assets/images/icon-16-mijovideos-fields.png">COM_MIJOVIDEOS_FIELDS</menu>
+			<menu link="option=com_mijovideos&amp;view=categories" img="components/com_mijovideos/assets/images/icon-16-mijovideos-categories.png">COM_MIJOVIDEOS_CATEGORIES</menu>
+            <menu link="option=com_mijovideos&amp;view=channels" img="components/com_mijovideos/assets/images/icon-16-mijovideos-channels.png">COM_MIJOVIDEOS_CHANNELS</menu>
+			<menu link="option=com_mijovideos&amp;view=playlists" img="components/com_mijovideos/assets/images/icon-16-mijovideos-playlists.png">COM_MIJOVIDEOS_PLAYLISTS</menu>
+			<menu link="option=com_mijovideos&amp;view=videos" img="components/com_mijovideos/assets/images/icon-16-mijovideos-videos.png">COM_MIJOVIDEOS_VIDEOS</menu>	  		
+			<menu link="option=com_mijovideos&amp;view=reports" img="components/com_mijovideos/assets/images/icon-16-mijovideos-reports.png">COM_MIJOVIDEOS_REPORTS</menu>	  		
+			<menu link="option=com_mijovideos&amp;view=files" img="components/com_mijovideos/assets/images/icon-16-mijovideos-files.png">COM_MIJOVIDEOS_FILES</menu>	  		
+			<menu link="option=com_mijovideos&amp;view=processes" img="components/com_mijovideos/assets/images/icon-16-mijovideos-processes.png">COM_MIJOVIDEOS_PROCESSES</menu>	  		
+			<menu link="option=com_mijovideos&amp;view=subscriptions" img="components/com_mijovideos/assets/images/icon-16-mijovideos-subscriptions.png">COM_MIJOVIDEOS_SUBSCRIPTIONS</menu>	  		
+			<menu link="option=com_mijovideos&amp;view=upgrade" img="components/com_mijovideos/assets/images/icon-16-mijovideos-upgrade.png">COM_MIJOVIDEOS_UPGRADE</menu>  			
+			<menu link="option=com_mijovideos&amp;view=support&amp;task=support" img="components/com_mijovideos/assets/images/icon-16-mijovideos-support.png">COM_MIJOVIDEOS_SUPPORT</menu>
+		</submenu> 
+		
+		<languages folder="languages/admin">     
+			<language tag="en-GB">en-GB/en-GB.com_mijovideos.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_mijovideos.sys.ini</language> 
+		</languages>
+		
+		<files folder="admin">
+			<filename>ubr_upload.pl</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>mijovideos.php</filename>
+			<filename>toolbar.php</filename>  
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>library</folder>	
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>    
+	</administration>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	
+	<scriptfile>script.php</scriptfile>
+</extension>
